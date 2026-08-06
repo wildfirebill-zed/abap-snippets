@@ -1,0 +1,80 @@
+{
+  "Print to output": {
+    "prefix": "print",
+    "body": [
+      "printf(\"${1:text}\\n\", ${2:args});"
+    ],
+    "description": "Print a value to output"
+  },
+  "Import statement": {
+    "prefix": "import",
+    "body": [
+      "#include <${1:header}>"
+    ],
+    "description": "Import a dependency"
+  },
+  "Function definition": {
+    "prefix": "fn",
+    "body": [
+      "void ${1:name}(${2:args}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Function definition"
+  },
+  "If statement": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "If statement"
+  },
+  "For loop": {
+    "prefix": "for",
+    "body": [
+      "for (${1:i}=0; ${1:condition}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For loop"
+  },
+  "Class definition": {
+    "prefix": "class",
+    "body": [
+      "class ${1:Name} {",
+      "\t$0",
+      "};"
+    ],
+    "description": "Class definition"
+  },
+  "Main entry point": {
+    "prefix": "main",
+    "body": [
+      "int main(${2:args}) {",
+      "\t$0",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "Main function"
+  },
+  "TODO comment": {
+    "prefix": "todo",
+    "body": [
+      "// TODO: ${1:message}",
+      "$0"
+    ],
+    "description": "Add a TODO comment"
+  },
+  "Comment banner": {
+    "prefix": "cmm",
+    "body": [
+      "// ========================================",
+      "// ${1:Section}",
+      "// ========================================",
+      "$0"
+    ],
+    "description": "Add a comment banner"
+  }
+}

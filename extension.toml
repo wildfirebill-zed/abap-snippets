@@ -1,0 +1,8 @@
+id = "abap-snippets"
+name = "ABAP Snippets"
+version = "0.0.1"
+schema_version = 1
+authors = ["Wildfirebill"]
+description = "Snippets for ABAP."
+repository = "https://github.com/example/abap-snippets"
+snippets = ['./snippets/abap.json']
